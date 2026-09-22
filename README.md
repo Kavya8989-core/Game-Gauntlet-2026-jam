@@ -277,5 +277,3 @@ Features, mechanics, visuals, vehicle behavior, balancing, and progression syste
 
 Ideas, feedback, bug reports, and contributions are welcome.
 
-If you'd like to contribute, feel free to open an **Issue** or sub
-
