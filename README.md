@@ -277,3 +277,5 @@ Features, mechanics, visuals, vehicle behavior, balancing, and progression syste
 
 Ideas, feedback, bug reports, and contributions are welcome.
 
+Note that all the assets which are used in the game are free 
+
