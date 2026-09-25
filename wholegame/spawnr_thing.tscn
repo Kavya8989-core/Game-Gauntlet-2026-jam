@@ -1,0 +1,14 @@
+[gd_scene format=3 uid="uid://b1iqng1h080e"]
+
+[ext_resource type="Script" uid="uid://dj2yooa4jiwaa" path="res://spawnr_thing.gd" id="1_sqo3j"]
+[ext_resource type="PackedScene" uid="uid://bb6hayl4e4h2j" path="res://scne/car.tscn" id="2_35ejr"]
+
+[node name="spawnr thing" type="Node2D" unique_id=1807773249]
+script = ExtResource("1_sqo3j")
+car_scene = ExtResource("2_35ejr")
+
+[node name="Timer" type="Timer" parent="." unique_id=1513139892]
+wait_time = 3.432
+autostart = true
+
+[connection signal="timeout" from="Timer" to="." method="_on_timer_timeout"]

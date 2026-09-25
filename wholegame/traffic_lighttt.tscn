@@ -1,0 +1,33 @@
+[gd_scene format=3 uid="uid://b5hmbecyicw8j"]
+
+[ext_resource type="Script" uid="uid://c55xptn1fkd0x" path="res://scne/scripts/traffic.gd" id="1_0o7pd"]
+[ext_resource type="Texture2D" uid="uid://ck4dp6otgicpo" path="res://assets/map assets/CP_V1.1.0_nyknck/Animations/SL001.png" id="2_ad1rp"]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_0cvp5"]
+height = 34.0
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ye287"]
+atlas = ExtResource("2_ad1rp")
+region = Rect2(60, 0, 30, 68)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_s7rlf"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ye287")
+}],
+"loop": 1,
+"name": &"default",
+"speed": 5.0
+}]
+
+[node name="TrafficLighttt" type="CharacterBody2D" unique_id=24907968]
+script = ExtResource("1_0o7pd")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=396093177]
+position = Vector2(-8, 14)
+shape = SubResource("CapsuleShape2D_0cvp5")
+disabled = true
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=1375415450]
+sprite_frames = SubResource("SpriteFrames_s7rlf")
